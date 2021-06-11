@@ -33,3 +33,10 @@
   <img src="./figures/f2.png" width="800"></br>
   <p>The further usages. Detecting the location of digits can be conducted using an attention map.</p>
 </div>
+
+## Requirements
+* TensorFlow 2.3.0  
+* Numpy 1.18.5
+
+## Additional Resources
+[1] <a href="https://github.com/kjm1559/simple_attention">Simple attention mechanism test</a> by Myung Jin Kim
