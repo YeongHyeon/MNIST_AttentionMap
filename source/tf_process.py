@@ -53,23 +53,17 @@ def test(agent, dataset, batch_size):
                     minibatch['x'][idx_y], scipy.ndimage.zoom(step_dict['attn'][idx_y].numpy(), 4, order=3)
 
                 plt.clf()
-                plt.figure(figsize=(12, 5))
+                plt.figure(figsize=(8, 5))
 
-                plt.subplot(1, 3, 1)
+                plt.subplot(1, 2, 1)
                 plt.axis('off')
                 plt.title("Input")
                 plt.imshow(canvas[:, :, 0], cmap='gray')
 
-                plt.subplot(1, 3, 2)
+                plt.subplot(1, 2, 2)
                 plt.axis('off')
                 plt.title("Attention Map")
                 plt.imshow(canvas_attn[:, :, 0], cmap='jet')
-
-                plt.subplot(1, 3, 3)
-                plt.axis('off')
-                plt.title("Overlap")
-                plt.imshow(canvas[:, :, 0], cmap='gray')
-                plt.imshow(canvas_attn[:, :, 0], cmap='jet', alpha=0.5)
 
                 plt.tight_layout()
                 plt.savefig(os.path.join(savedir, path_model, "true_%d;pred_%d;%08d.png" %(y_true, y_pred, saveidx)))
