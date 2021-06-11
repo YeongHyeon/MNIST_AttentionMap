@@ -60,9 +60,6 @@ class Dataset(object):
                 terminator = True
                 break
             else:
-                if(tt == 0):
-                    if(np.random.rand(1) < 0.3):
-                        tmp_x = -tmp_x + 1
                 batch_x.append(np.expand_dims(tmp_x, axis=-1))
                 batch_y.append(np.diag(np.ones(self.num_class))[tmp_y])
                 idx_d += 1
