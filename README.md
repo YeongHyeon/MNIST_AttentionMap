@@ -1,4 +1,4 @@
-[TensorFlow] Protein Interface Prediction using Graph Convolutional Networks
+[TensorFlow] Attention mechanism with MNIST dataset
 =====
 
 ## Result
