@@ -1,6 +1,11 @@
 [TensorFlow] Attention mechanism with MNIST dataset
 =====
 
+## Usage
+``` sh
+$ python run.py
+```
+
 ## Result
 
 ### Training
